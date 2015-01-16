@@ -30,6 +30,7 @@ gem 'bootstrap-sass'
 gem 'autoprefixer-rails', '~> 4.0.2'
 gem  'devise-encryptable'
 gem 'private_pub'
+gem 'sprockets_better_errors'
 gem 'thin'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
