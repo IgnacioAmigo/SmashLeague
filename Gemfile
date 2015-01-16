@@ -25,12 +25,12 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 
 
 gem 'devise'
-gem 'sprockets-rails', '2.0.1'
 gem 'bootstrap-sass' 
 gem 'autoprefixer-rails', '~> 4.0.2'
+gem 'sprockets', '2.11.0'
 gem  'devise-encryptable'
 gem 'private_pub'
-gem 'sprockets_better_errors'
+#gem 'sprockets_better_errors'
 #gem 'thin'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
