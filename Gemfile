@@ -25,6 +25,8 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 
 
 gem 'devise'
+#
+gem 'sprockets-rails'
 gem 'bootstrap-sass' 
 gem 'autoprefixer-rails', '~> 4.0.2'
 gem 'sprockets', '2.11.0'
