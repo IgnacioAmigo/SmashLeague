@@ -6,7 +6,7 @@ gem 'rails', '4.1.4'
 # Use sqlite3 as the database for Active Record
 gem 'pg'
 # Use SCSS for stylesheets
-gem 'sass-rails', '~> 4.0.3'
+gem 'sass-rails', '4.0.3'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .js.coffee assets and views
@@ -25,7 +25,7 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 
 
 gem 'devise'
-
+gem 'sprockets-rails', '2.0.1'
 gem 'bootstrap-sass' 
 gem 'autoprefixer-rails', '~> 4.0.2'
 gem 'sprockets', '2.11.0'
