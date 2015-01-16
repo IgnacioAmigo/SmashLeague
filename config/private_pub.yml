@@ -1,10 +1,10 @@
 development:
-  server: "http://localhost:9292/faye"
-  secret_token: "secret"
+  server: "http://fayeserverssbleague.herokuapp.com/faye"
+  secret_token: "bluemagic"
 test:
-  server: "http://localhost:9292/faye"
-  secret_token: "secret"
+  server: "http://fayeserverssbleague.herokuapp.com/faye"
+  secret_token: "bluemagic"
 production:
-  server: "http://example.com/faye"
-  secret_token: "598c10464f4211a989adfb6ec51def17f185b110bf37f2d6973e7cca2e6020f9"
+  server: "http://fayeserverssbleague.herokuapp.com/faye"
+  secret_token: "bluemagic"
   signature_expiration: 3600 # one hour
