@@ -28,6 +28,7 @@ gem 'devise'
 
 gem 'bootstrap-sass' 
 gem 'autoprefixer-rails', '~> 4.0.2'
+gem 'sprockets', '2.11.0'
 gem  'devise-encryptable'
 gem 'private_pub'
 gem 'sprockets_better_errors'
