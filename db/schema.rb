@@ -11,7 +11,37 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150116040551) do
+ActiveRecord::Schema.define(version: 20150116154018) do
+
+  create_table "conversations", force: true do |t|
+    t.integer  "sender_id"
+    t.integer  "recipient_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "conversations", ["recipient_id"], name: "index_conversations_on_recipient_id"
+  add_index "conversations", ["sender_id"], name: "index_conversations_on_sender_id"
+
+  create_table "messages", force: true do |t|
+    t.text     "body"
+    t.integer  "conversation_id"
+    t.integer  "user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "messages", ["conversation_id"], name: "index_messages_on_conversation_id"
+  add_index "messages", ["user_id"], name: "index_messages_on_user_id"
+
+  create_table "news", force: true do |t|
+    t.text     "body"
+    t.integer  "user_id"
+    t.boolean  "show"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "title"
+  end
 
   create_table "users", force: true do |t|
     t.string   "email",                  default: "", null: false
@@ -27,6 +57,7 @@ ActiveRecord::Schema.define(version: 20150116040551) do
     t.boolean  "admin"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "name"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true

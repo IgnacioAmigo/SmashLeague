@@ -27,8 +27,10 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'devise'
 
 gem 'bootstrap-sass' 
-gem 'autoprefixer-rails'
-
+gem 'autoprefixer-rails', '~> 4.0.2'
+gem  'devise-encryptable'
+gem 'private_pub'
+gem 'thin'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
