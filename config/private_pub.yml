@@ -1,10 +1,10 @@
 development:
-  server: "https://fayeserverssbleague.herokuapp.com/faye"
+  server: "http://fayeserverssbleague.herokuapp.com/faye"
   secret_token: "bluemagic"
 test:
-  server: "https://fayeserverssbleague.herokuapp.com/faye"
+  server: "http://fayeserverssbleague.herokuapp.com/faye"
   secret_token: "bluemagic"
 production:
-  server: "https://fayeserverssbleague.herokuapp.com/faye"
+  server: "http://fayeserverssbleague.herokuapp.com/faye"
   secret_token: "bluemagic"
-  signature_expiration: 86400 # one hour
+  signature_expiration: 86400  # one hour
