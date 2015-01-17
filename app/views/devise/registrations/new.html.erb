@@ -14,6 +14,12 @@
   </div>
 
   <div class="field">
+    <%= f.label "Nintendo Network ID" %><br />
+    <%= f.text_field :nintendo_network_id, autofocus: true %>
+  </div>
+
+
+  <div class="field">
     <%= f.label :password %>
     <% if @validatable %>
     <em>(<%= @minimum_password_length %> characters minimum)</em>
