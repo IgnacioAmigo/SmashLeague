@@ -2,6 +2,7 @@ Rails.application.routes.draw do
 
   get 'matches/conflicting'
 
+  get 'user_info/all'
   match 'user_info/:id/show'  => "user_info#show", :via => :get
   match "/matches/:id/accept" => "matches#accept", :via => :post
   match "/matches/pending" => "matches#pending", :via => :get

@@ -1,0 +1,14 @@
+
+<% if !@users.blank? %>
+  	<ul class="list-group" stlye="margin:20px">
+
+  <% for item in @users %>
+  	<li class="list-group-item" style="width:10%">  	<%= link_to item.name + (item.admin ? ' (Admin)' : ' '), '/user_info/'+item.id.to_s+'/show' %></li>
+
+
+  <% end %>
+	</ul>
+
+<% else %>
+  
+<% end %>
