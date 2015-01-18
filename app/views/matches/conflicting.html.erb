@@ -1,0 +1,34 @@
+<h1>Listing match requests</h1>
+<p class="bg-warning" style='padding:15px'>
+  los usuarios pusieron cualquiera etc etc
+</p>
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th>ID</th>
+
+      <th>Challenger</th>
+      <th>Challenged</th>
+      <th>Challenger won</th>
+      <th>Description</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @matches.each do |match| %>
+      <tr>
+        <td><%= match.id.to_s %></td>
+        <td><%= link_to match.challenger.name, '/user_info/'+match.challenger.id.to_s+'/show' %></td>
+        <td><%= link_to match.challenged.name, '/user_info/'+match.challenged.id.to_s+'/show'  %></td>
+        <td><%= match.challenger_won %></td>
+        <td><%= match.description %></td>
+        <% if match.editable_by current_user %>
+          <td><%= link_to 'Destroy', match, method: :delete, data: { confirm: 'Are you sure?' } %>
+        <% end %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+<br>
+<%= link_to 'New Match', new_match_path %>

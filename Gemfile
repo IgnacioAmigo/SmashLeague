@@ -33,6 +33,7 @@ gem 'sprockets', '2.11.0'
 gem  'devise-encryptable'
 gem 'private_pub'
 #gem 'sprockets_better_errors'
+gem 'bb-ruby'
 gem 'thin'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

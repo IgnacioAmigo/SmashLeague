@@ -1,0 +1,32 @@
+<%= form_for(@match) do |f| %>
+  <% if @match.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@match.errors.count, "error") %> prohibited this match from being saved:</h2>
+
+      <ul>
+      <% @match.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :challenged_id %><br>
+    <%= f.collection_select :challenged_id, User.all.where('id != ?',current_user.id), :id, :name, :selected => @match.challenged_id  %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br>
+    <%= f.text_field :description %>
+  </div>
+  <% if  params[:action] =='edit' %>
+    <div class="field">
+      <%= f.label :proof %><br>
+      <%= f.text_field :proof %>
+    </div>  
+  <% end %>
+  
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

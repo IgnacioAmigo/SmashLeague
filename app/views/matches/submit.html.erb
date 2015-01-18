@@ -1,0 +1,39 @@
+<h1>Submit match results</h1>
+<p class="bg-warning" style='padding:15px'>
+Submit results to matches that were already accepted.
+</p>
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th>Challenger</th>
+      <th>Challenged</th>
+      <th>Challenger won</th>
+      <th>Description</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @matches.each do |match| %>
+      <tr>
+        <td><%= link_to match.challenger.name, '/user_info/'+match.challenger.id.to_s+'/show' %></td>
+        <td><%= link_to match.challenged.name, '/user_info/'+match.challenged.id.to_s+'/show' %></td>
+        <td><%= match.challenger_won %></td>
+        <td><%= match.description %></td>
+        <td>
+        <%= form_tag '/matches/submit/'+match.id.to_s do %>
+          <%= hidden_field_tag 'i_won',true %>
+          <%= submit_tag "I won" %></td>
+        <% end %>
+        <td>
+        <%= form_tag '/matches/submit/'+match.id.to_s do %>
+          <%= hidden_field_tag 'i_won',false %>
+          <%= submit_tag "I lost" %></td>
+        <% end %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+<br>
+<%= link_to 'New Match', new_match_path %>

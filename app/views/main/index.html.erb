@@ -1,14 +1,18 @@
 <div class="container-fluid" style="padding-left:200px">
 <div class="row">
   <div class="col-xs-12 col-sm-6 col-md-8 highlight">
+    <p id="notice" style="padding:10px"><%= notice %></p>
 <h2 id="input-groups" class="page-header">News</h2>
   <% if !@news.blank? %>
     <% for item in @news %>
 
       <div class="bs-callout bs-callout-info" id="callout-navbar-breakpoint">
+        <% if current_user.admin %>
+          <%= link_to '(edit)', '/news/'+ item.id.to_s+'/edit/'  %> 
+        <% end %>
 		    <h3><%= item.title %></h3><small> by <%= item.user.name %> on <%= item.created_at %></small>
 		    <br/>
-		    <p><%= item.body %></p>
+		    <p><%= item.body.bbcode_to_html!.html_safe %></p>
   	  </div>
     <% end %>
   <% else %>
@@ -27,8 +31,8 @@
 
       	<% if user != current_user %>
       		      <td>
-	        <%= link_to user.name, "#", class: "btn btn-default-xs btn-primary start-conversation",
-	                    "data-sid" => current_user.id, "data-rip" => user.id,:style=>"width:100%" %>
+	        <%= link_to user.name, "#", class: "btn btn-default btn-xs start-conversation",
+	                    "data-sid" => current_user.id, "data-rip" => user.id,:style=>"width:100%;" %>
       	      </td>
       	<% end %>
 

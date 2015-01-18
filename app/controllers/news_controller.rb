@@ -1,7 +1,15 @@
+
 class NewsController < ApplicationController
+
   before_action :set_news, only: [:show, :edit, :update, :destroy]
   before_filter :authenticate_user!
+  before_filter :check_admin
+
   respond_to :html
+
+  def check_admin
+    redirect_to '/' and return if (!(user_signed_in? and current_user.admin) )
+  end
 
   def index
     @news = News.all

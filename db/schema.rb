@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150117001842) do
+ActiveRecord::Schema.define(version: 20150118221908) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -25,6 +25,19 @@ ActiveRecord::Schema.define(version: 20150117001842) do
 
   add_index "conversations", ["recipient_id"], name: "index_conversations_on_recipient_id", using: :btree
   add_index "conversations", ["sender_id"], name: "index_conversations_on_sender_id", using: :btree
+
+  create_table "matches", force: true do |t|
+    t.integer  "challenger_id"
+    t.integer  "challenged_id"
+    t.boolean  "challenger_won"
+    t.string   "description"
+    t.string   "proof"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.boolean  "accepted"
+    t.boolean  "challenger_posted_challenger_won"
+    t.boolean  "challenged_posted_challenger_won"
+  end
 
   create_table "messages", force: true do |t|
     t.text     "body"

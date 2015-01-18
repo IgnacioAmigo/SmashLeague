@@ -1,11 +1,22 @@
 Rails.application.routes.draw do
 
+  get 'matches/conflicting'
+
+  match 'user_info/:id/show'  => "user_info#show", :via => :get
+  match "/matches/:id/accept" => "matches#accept", :via => :post
+  match "/matches/pending" => "matches#pending", :via => :get
+  match "/matches/submit" => "matches#submit", :via => :get
+  match "/matches/submit/:id" => "matches#submit_value", :via => :post
+
+  resources :matches
+
   resources :news
 
   root 'main#index'
 
   get 'main/index'
   get 'main/faq'
+
 
   devise_for :users
 

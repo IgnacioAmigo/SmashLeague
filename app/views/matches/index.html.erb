@@ -1,0 +1,43 @@
+<h1>Listing matches</h1>
+<p class="bg-warning" style='padding:15px'>
+Matches that already finished
+</p>
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th>Challenger</th>
+      <th>Challenged</th>
+      <th>Winner</th>
+      <th>Description</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @matches.each do |match| %>
+      <tr>
+        <td><%= link_to match.challenger.name, '/user_info/'+match.challenger.id.to_s+'/show'  %></td>
+        <td><%= link_to match.challenged.name, '/user_info/'+match.challenged.id.to_s+'/show' %></td>
+        <td><%= 
+        
+        if match.challenger_won then
+          match.challenger.name 
+        else 
+          match.challenged.name 
+        end
+        '' if match.challenger_won=nil
+         %></td>
+        <td><%= match.description %></td>
+        <td><%= link_to 'Show', match %></td>
+        <% if match.editable_by current_user %>
+          <td><%= link_to 'Destroy', match, method: :delete, data: { confirm: 'Are you sure?' } %>
+        <% end %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+<br>
+
+
+
+<%= link_to 'New Match', new_match_path %>

@@ -31,6 +31,7 @@ GEM
     arel (5.0.1.20140414130214)
     autoprefixer-rails (4.0.2.2)
       execjs
+    bb-ruby (1.0)
     bcrypt (3.1.9-x86-mingw32)
     bootstrap-sass (3.3.1.0)
       sass (~> 3.2)
@@ -167,6 +168,7 @@ PLATFORMS
 
 DEPENDENCIES
   autoprefixer-rails (~> 4.0.2)
+  bb-ruby
   bootstrap-sass
   coffee-rails (~> 4.0.0)
   devise
