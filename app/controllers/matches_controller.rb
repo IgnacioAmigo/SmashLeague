@@ -49,11 +49,13 @@ class MatchesController < ApplicationController
 
     if (current_user == current_match.challenged)
       current_match.challenged_posted_challenger_won=!(params[:i_won])
+      current_match.try_to_determine_winner
       current_match.save
     end
     
     if (current_user == current_match.challenger)
       current_match.challenger_posted_challenger_won=(params[:i_won])
+      current_match.try_to_determine_winner
       current_match.save
     end
     

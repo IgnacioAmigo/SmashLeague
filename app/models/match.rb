@@ -3,7 +3,6 @@ class Match < ActiveRecord::Base
   belongs_to :challenged, :foreign_key => :challenged_id, class_name: 'User'
   validates :challenger_id, presence: true
   validates :challenged_id, presence: true
-  before_save :try_to_determine_winner
 
 
   def editable_by(user)
