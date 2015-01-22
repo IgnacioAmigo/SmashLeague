@@ -12,7 +12,7 @@ module SmashLeague
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
 
-    #GA.tracker = 'UA-42262199-2'
+    config.middleware.use Rack::GoogleAnalytics, :tracker => 'UA-42262199-2'
 
     # Set Time.zone default to the specified zone and make Active Record auto-convert to this zone.
     # Run "rake -D time" for a list of tasks for finding time zone names. Default is UTC.

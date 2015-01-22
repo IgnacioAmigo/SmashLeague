@@ -99,3 +99,104 @@
 2015-01-16T19:52:11.713071+00:00 heroku[router]: at=info method=GET path="/" host=smashleague.herokuapp.com request_id=ad3fc2a2-3bf6-49fd-891e-dce9eda07509 fwd="190.244.163.232" dyno=web.1 connect=2ms service=11ms status=302 bytes=1004
 2015-01-16T19:52:12.303620+00:00 heroku[router]: at=info method=GET path="/" host=smashleague.herokuapp.com request_id=ac086e60-ce62-4026-86b5-be718f457538 fwd="190.244.163.232" dyno=web.1 connect=4ms service=15ms status=302 bytes=1004
 2015-01-16T19:52:12.552860+00:00 heroku[router]: at=info method=GET path="/users/sign_in" host=smashleague.herokuapp.com request_id=86d16761-cdf1-4a58-86dd-43c1309d3ba0 fwd="190.244.163.232" dyno=web.1 connect=2ms service=17ms status=500 bytes=1754
+2015-01-22T15:42:33.459044+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.0.0/gems/railties-4.1.4/lib/rails/initializable.rb:54:in `run_initializers'
+2015-01-22T15:42:33.459186+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.0.0/gems/rack-1.5.2/lib/rack/builder.rb:49:in `eval'
+2015-01-22T15:42:33.459171+00:00 app[web.1]: 	from /app/config.ru:in `<main>'
+2015-01-22T15:42:33.459013+00:00 app[web.1]: 	from /app/vendor/ruby-2.0.0/lib/ruby/2.0.0/tsort.rb:180:in `each_strongly_connected_component'
+2015-01-22T15:42:33.459212+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.0.0/gems/rack-1.5.2/lib/rack/builder.rb:49:in `new_from_string'
+2015-01-22T15:42:33.459229+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.0.0/gems/rack-1.5.2/lib/rack/builder.rb:40:in `parse_file'
+2015-01-22T15:42:33.459059+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.0.0/gems/railties-4.1.4/lib/rails/application.rb:300:in `initialize!'
+2015-01-22T15:42:33.459075+00:00 app[web.1]: 	from /app/config/environment.rb:5:in `<top (required)>'
+2015-01-22T15:42:33.459107+00:00 app[web.1]: 	from /app/config.ru:3:in `block in <main>'
+2015-01-22T15:42:33.459261+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.0.0/gems/rack-1.5.2/lib/rack/server.rb:199:in `app'
+2015-01-22T15:42:33.459245+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.0.0/gems/rack-1.5.2/lib/rack/server.rb:277:in `build_app_and_options_from_config'
+2015-01-22T15:42:33.459124+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.0.0/gems/rack-1.5.2/lib/rack/builder.rb:55:in `instance_eval'
+2015-01-22T15:42:33.459139+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.0.0/gems/rack-1.5.2/lib/rack/builder.rb:55:in `initialize'
+2015-01-22T15:42:33.459276+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.0.0/gems/railties-4.1.4/lib/rails/commands/server.rb:50:in `app'
+2015-01-22T15:42:33.459307+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.0.0/gems/rack-1.5.2/lib/rack/server.rb:250:in `start'
+2015-01-22T15:42:33.459335+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.0.0/gems/railties-4.1.4/lib/rails/commands/server.rb:69:in `start'
+2015-01-22T15:42:33.459291+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.0.0/gems/rack-1.5.2/lib/rack/server.rb:314:in `wrapped_app'
+2015-01-22T15:42:33.459155+00:00 app[web.1]: 	from /app/config.ru:in `new'
+2015-01-22T15:42:33.459399+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.0.0/gems/railties-4.1.4/lib/rails/commands/commands_tasks.rb:40:in `run_command!'
+2015-01-22T15:42:33.459352+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.0.0/gems/railties-4.1.4/lib/rails/commands/commands_tasks.rb:81:in `block in server'
+2015-01-22T15:42:33.459368+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.0.0/gems/railties-4.1.4/lib/rails/commands/commands_tasks.rb:76:in `tap'
+2015-01-22T15:42:33.459384+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.0.0/gems/railties-4.1.4/lib/rails/commands/commands_tasks.rb:76:in `server'
+2015-01-22T15:42:33.459463+00:00 app[web.1]: 	from bin/rails:4:in `<main>'
+2015-01-22T15:42:33.459446+00:00 app[web.1]: 	from bin/rails:4:in `require'
+2015-01-22T15:42:33.459415+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.0.0/gems/railties-4.1.4/lib/rails/commands.rb:17:in `<top (required)>'
+2015-01-22T15:42:33.477727+00:00 app[web.1]: => Booting Thin
+2015-01-22T15:42:33.477733+00:00 app[web.1]: => Rails 4.1.4 application starting in production on http://0.0.0.0:41417
+2015-01-22T15:42:33.477738+00:00 app[web.1]: => Ctrl-C to shutdown server
+2015-01-22T15:42:33.477735+00:00 app[web.1]: => Run `rails server -h` for more startup options
+2015-01-22T15:42:33.477737+00:00 app[web.1]: => Notice: server is listening on all interfaces (0.0.0.0). Consider using 127.0.0.1 (--binding option)
+2015-01-22T15:42:33.477739+00:00 app[web.1]: Exiting
+2015-01-22T15:42:34.374262+00:00 heroku[web.1]: Process exited with status 1
+2015-01-22T15:42:34.385625+00:00 heroku[web.1]: State changed from starting to crashed
+2015-01-22T15:43:42.935436+00:00 heroku[api]: Release v35 created by amigoigna@gmail.com
+2015-01-22T15:43:42.935436+00:00 heroku[api]: Deploy a67518a by amigoigna@gmail.com
+2015-01-22T15:43:43.295970+00:00 heroku[web.1]: State changed from crashed to starting
+2015-01-22T15:43:50.110185+00:00 heroku[web.1]: Starting process with command `bin/rails server -p 46208 -e production`
+2015-01-22T15:43:53.333652+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.0.0/gems/railties-4.1.4/lib/rails/railtie.rb:210:in `instance_eval'
+2015-01-22T15:43:53.333672+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.0.0/gems/railties-4.1.4/lib/rails/railtie.rb:210:in `configure'
+2015-01-22T15:43:53.333738+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.0.0/gems/railties-4.1.4/lib/rails/engine.rb:593:in `each'
+2015-01-22T15:43:53.333764+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.0.0/gems/railties-4.1.4/lib/rails/engine.rb:593:in `block in <class:Engine>'
+2015-01-22T15:43:53.333867+00:00 app[web.1]: 	from /app/vendor/ruby-2.0.0/lib/ruby/2.0.0/tsort.rb:150:in `block in tsort_each'
+2015-01-22T15:43:53.333902+00:00 app[web.1]: 	from /app/vendor/ruby-2.0.0/lib/ruby/2.0.0/tsort.rb:183:in `block (2 levels) in each_strongly_connected_component'
+2015-01-22T15:43:53.333929+00:00 app[web.1]: 	from /app/vendor/ruby-2.0.0/lib/ruby/2.0.0/tsort.rb:210:in `block (2 levels) in each_strongly_connected_component_from'
+2015-01-22T15:43:53.333953+00:00 app[web.1]: 	from /app/vendor/ruby-2.0.0/lib/ruby/2.0.0/tsort.rb:219:in `each_strongly_connected_component_from'
+2015-01-22T15:43:53.333831+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.0.0/gems/railties-4.1.4/lib/rails/initializable.rb:55:in `block in run_initializers'
+2015-01-22T15:43:53.333596+00:00 app[web.1]: /app/config/environments/production.rb:13:in `block in <top (required)>': uninitialized constant GA (NameError)
+2015-01-22T15:43:53.333976+00:00 app[web.1]: 	from /app/vendor/ruby-2.0.0/lib/ruby/2.0.0/tsort.rb:209:in `block in each_strongly_connected_component_from'
+2015-01-22T15:43:53.333692+00:00 app[web.1]: 	from /app/config/environments/production.rb:1:in `<top (required)>'
+2015-01-22T15:43:53.333713+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.0.0/gems/railties-4.1.4/lib/rails/engine.rb:594:in `block (2 levels) in <class:Engine>'
+2015-01-22T15:43:53.333783+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.0.0/gems/railties-4.1.4/lib/rails/initializable.rb:30:in `instance_exec'
+2015-01-22T15:43:53.333803+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.0.0/gems/railties-4.1.4/lib/rails/initializable.rb:30:in `run'
+2015-01-22T15:43:53.334016+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.0.0/gems/railties-4.1.4/lib/rails/initializable.rb:44:in `each'
+2015-01-22T15:43:53.334038+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.0.0/gems/railties-4.1.4/lib/rails/initializable.rb:44:in `tsort_each_child'
+2015-01-22T15:43:53.334061+00:00 app[web.1]: 	from /app/vendor/ruby-2.0.0/lib/ruby/2.0.0/tsort.rb:203:in `each_strongly_connected_component_from'
+2015-01-22T15:43:53.334132+00:00 app[web.1]: 	from /app/vendor/ruby-2.0.0/lib/ruby/2.0.0/tsort.rb:180:in `each'
+2015-01-22T15:43:53.334097+00:00 app[web.1]: 	from /app/vendor/ruby-2.0.0/lib/ruby/2.0.0/tsort.rb:182:in `block in each_strongly_connected_component'
+2015-01-22T15:43:53.334177+00:00 app[web.1]: 	from /app/vendor/ruby-2.0.0/lib/ruby/2.0.0/tsort.rb:148:in `tsort_each'
+2015-01-22T15:43:53.334201+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.0.0/gems/railties-4.1.4/lib/rails/initializable.rb:54:in `run_initializers'
+2015-01-22T15:43:53.334247+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.0.0/gems/railties-4.1.4/lib/rails/application.rb:300:in `initialize!'
+2015-01-22T15:43:53.334271+00:00 app[web.1]: 	from /app/config/environment.rb:5:in `<top (required)>'
+2015-01-22T15:43:53.334155+00:00 app[web.1]: 	from /app/vendor/ruby-2.0.0/lib/ruby/2.0.0/tsort.rb:180:in `each_strongly_connected_component'
+2015-01-22T15:43:53.334294+00:00 app[web.1]: 	from /app/config.ru:3:in `block in <main>'
+2015-01-22T15:43:53.334318+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.0.0/gems/rack-1.5.2/lib/rack/builder.rb:55:in `instance_eval'
+2015-01-22T15:43:53.334363+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.0.0/gems/rack-1.5.2/lib/rack/builder.rb:55:in `initialize'
+2015-01-22T15:43:53.334387+00:00 app[web.1]: 	from /app/config.ru:in `new'
+2015-01-22T15:43:53.334449+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.0.0/gems/rack-1.5.2/lib/rack/builder.rb:49:in `new_from_string'
+2015-01-22T15:43:53.334552+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.0.0/gems/rack-1.5.2/lib/rack/server.rb:314:in `wrapped_app'
+2015-01-22T15:43:53.334476+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.0.0/gems/rack-1.5.2/lib/rack/builder.rb:40:in `parse_file'
+2015-01-22T15:43:53.334494+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.0.0/gems/rack-1.5.2/lib/rack/server.rb:277:in `build_app_and_options_from_config'
+2015-01-22T15:43:53.334514+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.0.0/gems/rack-1.5.2/lib/rack/server.rb:199:in `app'
+2015-01-22T15:43:53.334533+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.0.0/gems/railties-4.1.4/lib/rails/commands/server.rb:50:in `app'
+2015-01-22T15:43:53.334406+00:00 app[web.1]: 	from /app/config.ru:in `<main>'
+2015-01-22T15:43:53.334425+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.0.0/gems/rack-1.5.2/lib/rack/builder.rb:49:in `eval'
+2015-01-22T15:43:53.334626+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.0.0/gems/railties-4.1.4/lib/rails/commands/commands_tasks.rb:81:in `block in server'
+2015-01-22T15:43:53.334646+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.0.0/gems/railties-4.1.4/lib/rails/commands/commands_tasks.rb:76:in `tap'
+2015-01-22T15:43:53.334721+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.0.0/gems/railties-4.1.4/lib/rails/commands.rb:17:in `<top (required)>'
+2015-01-22T15:43:53.334665+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.0.0/gems/railties-4.1.4/lib/rails/commands/commands_tasks.rb:76:in `server'
+2015-01-22T15:43:53.334702+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.0.0/gems/railties-4.1.4/lib/rails/commands/commands_tasks.rb:40:in `run_command!'
+2015-01-22T15:43:53.334741+00:00 app[web.1]: 	from bin/rails:4:in `require'
+2015-01-22T15:43:53.334761+00:00 app[web.1]: 	from bin/rails:4:in `<main>'
+2015-01-22T15:43:53.334588+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.0.0/gems/rack-1.5.2/lib/rack/server.rb:250:in `start'
+2015-01-22T15:43:53.334607+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.0.0/gems/railties-4.1.4/lib/rails/commands/server.rb:69:in `start'
+2015-01-22T15:43:53.352377+00:00 app[web.1]: => Booting Thin
+2015-01-22T15:43:53.352384+00:00 app[web.1]: => Rails 4.1.4 application starting in production on http://0.0.0.0:46208
+2015-01-22T15:43:53.352386+00:00 app[web.1]: => Run `rails server -h` for more startup options
+2015-01-22T15:43:53.352388+00:00 app[web.1]: => Notice: server is listening on all interfaces (0.0.0.0). Consider using 127.0.0.1 (--binding option)
+2015-01-22T15:43:53.352389+00:00 app[web.1]: => Ctrl-C to shutdown server
+2015-01-22T15:43:53.352391+00:00 app[web.1]: Exiting
+2015-01-22T15:43:54.171376+00:00 heroku[web.1]: State changed from starting to crashed
+2015-01-22T15:43:54.163066+00:00 heroku[web.1]: Process exited with status 1
+2015-01-22T15:43:55.557250+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=smashleague.herokuapp.com request_id=71eff6b6-7c20-4d5f-8ba8-848abd4c6b81 fwd="190.244.163.232" dyno= connect= service= status=503 bytes=
+2015-01-22T15:43:59.516953+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=smashleague.herokuapp.com request_id=f96c1625-50a0-416f-a60a-16f5587ef4e9 fwd="190.244.163.232" dyno= connect= service= status=503 bytes=
+2015-01-22T15:44:02.597735+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=smashleague.herokuapp.com request_id=9fe90ab6-0339-4a24-bdd4-39e5b6bd40c1 fwd="190.244.163.232" dyno= connect= service= status=503 bytes=
+2015-01-22T15:44:03.224496+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=smashleague.herokuapp.com request_id=f76149fb-54fd-4f70-a585-2f7d5632baee fwd="190.244.163.232" dyno= connect= service= status=503 bytes=
+2015-01-22T15:44:04.831061+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=smashleague.herokuapp.com request_id=2cadf722-15dd-46df-8f63-feb49b613412 fwd="190.244.163.232" dyno= connect= service= status=503 bytes=
+2015-01-22T15:44:05.473774+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=smashleague.herokuapp.com request_id=e4ecb37d-12d8-488a-99ad-cb93cdb458fb fwd="190.244.163.232" dyno= connect= service= status=503 bytes=
+2015-01-22T15:44:06.896319+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=smashleague.herokuapp.com request_id=405fad0e-0dd1-49a1-a7c2-8be1d6623ebd fwd="190.244.163.232" dyno= connect= service= status=503 bytes=
+2015-01-22T15:44:07.742931+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=smashleague.herokuapp.com request_id=4d3fc943-6320-4177-8297-7f5b60a4d335 fwd="190.244.163.232" dyno= connect= service= status=503 bytes=
+2015-01-22T15:44:08.233875+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=smashleague.herokuapp.com request_id=669c9a92-d769-45a5-8e26-9f7d8e886908 fwd="190.244.163.232" dyno= connect= service= status=503 bytes=
+2015-01-22T15:44:09.270980+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=smashleague.herokuapp.com request_id=3b2393d9-7776-4be5-ad47-d5eb559903cb fwd="190.244.163.232" dyno= connect= service= status=503 bytes=

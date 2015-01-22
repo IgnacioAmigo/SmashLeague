@@ -10,7 +10,6 @@ config.assets.raise_production_errors = true
   # and those relying on copy on write to perform better.
   # Rake tasks automatically ignore this option for performance.
   config.eager_load = true
-  GA.tracker = 'UA-42262199-2'
 
   # Full error reports are disabled and caching is turned on.
   config.consider_all_requests_local       = false
